@@ -1,36 +1,20 @@
 
 const express = require("express");
-const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-
+const path = require("path");
 const details = require("./details.json");
 
 
 const app = express();
 
-//mysql 
 require('./config/config.js');
 const emailController = require('./controller/emailController.js');
-
-//cors 
-app.use(cors({ origin: "*" }));
+app.use(express.static(path.join(__dirname,"public")));
 app.use(bodyParser.json());
 
-//server strating 
-app.listen(3000, () => {
-  console.log("The server started on port 3000 !!!!!!");
-});
-//welcome routes
-app.get("/", (req, res) => {
-  res.send(
-    "<h1 style='text-align: center'>Wellcome to pnv digital <br><br>😃👻😃👻😃👻😃👻😃</h1>"
-  );
-});
-
-
 //send mail routes
-app.post("/sendmail", (req, res) => {
+app.post("/api/sendmail", (req, res) => {
   console.log("request came");
   let user = req.body;
   sendMail(user, info => {
@@ -41,8 +25,8 @@ app.post("/sendmail", (req, res) => {
   });
 });
 
+// create reusable transporter object using the default SMTP transport
 async function sendMail(user, callback) {
-  // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
@@ -71,4 +55,11 @@ async function sendMail(user, callback) {
   callback(info);
 }
 
-// main().catch(console.error);
+app.get("**", (req, res) => {
+  res.sendFile(path.join(path.join(__dirname,"public/index.html")));
+});
+
+//server strating 
+app.listen(3000, () => {
+  console.log("The server started on port 3000 !!!!!!");
+});
