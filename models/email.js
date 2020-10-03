@@ -1,8 +1,24 @@
 const mongoose = require('mongoose');
-var mailSchema = mongoose.Schema({
-	name: String,
-    prenom: String,
-    email: String,
-	message:String , 
+const schema = mongoose.Schema({
+	name: {
+        type:String,
+        required:true,
+    },
+    prenom: {
+        type:String,
+        required:true,
+    },
+    phone: {
+        type:String,
+        required:true,
+    },
+    email: {
+        type:String,
+        required:true,
+    },
+    message: {
+        type:String,
+        required:true,
+    },
 });
-var Email = (module.exports = mongoose.model('email', mailSchema));
+module.exports = mongoose.model('email', schema);

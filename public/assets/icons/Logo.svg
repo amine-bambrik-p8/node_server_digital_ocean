@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340.619" height="199.496" viewBox="0 0 340.619 199.496">
+  <g id="Groupe_15" data-name="Groupe 15" transform="translate(-527 -361.526)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(526.982 361.537)">
+      <g id="Layer_1" data-name="Layer 1" transform="translate(0.018 -0.011)">
+        <path id="Tracé_14" data-name="Tracé 14" d="M340.637,99.737a99.733,99.733,0,0,1-168.549,72.2h0l-.283-.27a90.393,90.393,0,0,0-50.217-15.23,89.463,89.463,0,0,0-28.424,4.6c-1.658.539-3.289,1.146-4.906,1.779v.108A66.713,66.713,0,1,1,94.444,39.089l1.011.472a89.733,89.733,0,0,0,25.082,3.572,90.178,90.178,0,0,0,48.869-14.421q2.992-1.9,5.822-4.043a99.733,99.733,0,0,1,165.409,75.07Z" transform="translate(-0.018 0.011)" fill="#5dadf1"/>
+      </g>
+    </g>
+    <text id="PNV" transform="translate(561 492)" fill="#fff" font-size="74" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">PNV</tspan></text>
+    <text id="Digital" transform="translate(721 492)" fill="#fff" font-size="38" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Digital</tspan></text>
+    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(714 422)" fill="#5dadf1" stroke="#fff" stroke-width="1">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="7" fill="none"/>
+    </g>
+    <text id="R" transform="translate(719 433)" fill="#fff" font-size="9" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">R</tspan></text>
+    <circle id="Ellipse_51" data-name="Ellipse 51" cx="5" cy="5" r="5" transform="translate(557 413)" fill="#fff" opacity="0.32"/>
+    <path id="Tracé_30" data-name="Tracé 30" d="M549.67,422.049a29.844,29.844,0,0,0-3.527,3.814c-2.209,2.78-5.014,7.444-5.014,12.75" transform="translate(3 3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7" opacity="0.32"/>
+  </g>
+</svg>

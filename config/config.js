@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-require('dotenv').config();
 
-const dbURI = process.env.DBURI;
+const dbURI = process.env.DB_URI;
 mongoose.connect(
 	dbURI,
 	{
@@ -10,6 +9,7 @@ mongoose.connect(
 		useUnifiedTopology: true
 	},
 	(err, success) => {
+		
 		if (err) throw err;
 	}
 );
